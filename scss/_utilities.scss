@@ -1,0 +1,464 @@
+@import "config";
+.current {
+  border-bottom: 2px solid $main-color;
+  margin-top: 10px;
+}
+
+.post-img {
+  height: 350px;
+}
+
+.post-1-img {
+  background: $bg-1 no-repeat center center/cover;
+}
+
+.post-2-img {
+  background: $bg-2 no-repeat center center/cover;
+}
+
+.post-3-img {
+  background: $bg-3 no-repeat center center/cover;
+}
+
+.fixture {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 7px;
+  background: $headline;
+  transition: background 0.4s ease-in-out;
+}
+
+.normal-showcase {
+  background: $secondary-color;
+}
+
+.current-box {
+  background-color: $light-red;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.click-style {
+  color: #ffc300;
+}
+
+.slideImages {
+  display: none;
+}
+
+.box-underline-red {
+  height: 2px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+  transition: width 0.6s ease-in-out;
+}
+
+.box-underline-dark {
+  height: 2px;
+  width: 3rem;
+  background: $secondary-color;
+  display: block;
+  transition: width 0.6s ease-in-out;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 0.5rem;
+}
+
+.heading {
+  margin: 2rem 0;
+  padding: 10px;
+  width: 100%;
+  background: $secondary-color;
+  color: set-text-color($secondary-color);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 1px solid $light-red;
+}
+
+.underline {
+  height: 2px;
+  width: 4rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.name-bg {
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px;
+  background: $light-red;
+}
+
+.btn {
+  padding: 5px;
+  text-decoration: none;
+}
+
+#l-goal {
+  color: $light-red;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+.btn-red {
+  background-color: $main-color;
+  color: #fff;
+}
+.btn-dark {
+  background-color: $secondary-color;
+  color: #fff;
+}
+
+.card-red {
+  background-color: $main-color;
+  color: set-text-color($main-color);
+}
+.card-dark {
+  background: $secondary-color;
+  color: set-text-color($secondary-color);
+}
+
+.card-white {
+  background: #fff;
+  color: set-text-color(#fff);
+}
+
+.card-stats {
+  background-color: $stats;
+  color: #fff;
+}
+
+.card-stats:hover {
+  img {
+    transform: scale(1.0221);
+    opacity: 0.7;
+  }
+
+  .box-underline-dark {
+    width: 4rem;
+  }
+}
+
+.card-red:hover {
+  img {
+    transform: scale(1.0221);
+    opacity: 0.7;
+  }
+
+  .box-underline-dark {
+    width: 4rem;
+  }
+}
+
+.card-dark:hover {
+  img {
+    transform: scale(1.0221);
+    opacity: 0.6;
+  }
+
+  .box-underline-red {
+    width: 4rem;
+  }
+}
+
+.card-master {
+  background: #ffc300;
+  color: set-text-color(#ffc300);
+}
+
+.card-white:hover {
+  img {
+    transform: scale(1.0221);
+    opacity: 0.6;
+  }
+
+  .box-underline-dark {
+    width: 4rem;
+  }
+}
+
+#up {
+  position: fixed;
+  top: 70%;
+  right: 20px;
+  display: none;
+  transition: display 0.4s ease-in-out;
+  color: $dark-color;
+}
+
+.stats {
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px;
+  background: #ffc300;
+  text-align: center;
+}
+
+// player profiles
+
+.profile {
+  width: 300px;
+  height: 350px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.child-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: no-repeat center center/cover;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  line-height: 1.5;
+}
+
+.profile:hover .child-p,
+.profile:focus .child-p {
+  -ms-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+  .box-underline-red {
+    width: 6rem;
+  }
+}
+
+.profile:hover .child-p::before,
+.profile:focus .child-p::before {
+  display: block;
+}
+
+.child-p::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.child-p-1 {
+  background: $pic-1;
+}
+.child-p-2 {
+  background: $pic-2;
+}
+.child-p-3 {
+  background: $pic-3;
+}
+.child-p-4 {
+  background: $pic-4;
+}
+.child-p-5 {
+  background: $pic-5;
+}
+.child-p-6 {
+  background: $pic-6;
+}
+.child-p-7 {
+  background: $pic-7;
+}
+.child-p-8 {
+  background: $pic-8;
+}
+.child-p-9 {
+  background: $pic-9;
+}
+.child-p-10 {
+  background: $pic-10;
+}
+.child-p-11 {
+  background: $pic-11;
+}
+.child-p-12 {
+  background: $pic-12;
+}
+.child-p-13 {
+  background: $pic-13;
+}
+.child-p-14 {
+  background: $pic-14;
+}
+.child-p-15 {
+  background: $pic-15;
+}
+.child-p-16 {
+  background: $pic-16;
+}
+.child-p-17 {
+  background: $pic-17;
+}
+.child-p-18 {
+  background: $pic-18;
+}
+.child-p-19 {
+  background: $pic-19;
+}
+.child-p-20 {
+  background: $pic-20;
+}
+.p-items {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  z-index: 2;
+  padding: 10px;
+  height: auto;
+}
+#player-name,
+#player-number {
+  color: #fff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+#player-number {
+  background: $light-red;
+  padding: 5px;
+  width: 40px;
+  text-align: center;
+}
+
+.img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+
+  &-1 {
+    background-image: $bg-1;
+  }
+  &-2 {
+    background-image: $bg-2;
+  }
+  &-3 {
+    background-image: $bg-3;
+  }
+  &-4 {
+    background-image: $bg-4;
+  }
+  &-5 {
+    background-image: $bg-5;
+  }
+}
+
+.squad-title {
+  text-transform: uppercase;
+  transition: color 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+#mid-title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3rem;
+  z-index: 2;
+  margin-top: 20px;
+}
+
+// modal utility
+
+.visible {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: display 0.4s ease-in-out;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  z-index: 10;
+  height: 100%;
+}
+
+.modal-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+}
+
+.nav-bg {
+  // background: $secondary-color;
+  background: rgba(0, 0, 0, 0.9);
+  transition: background 0.5s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+/*
+***************************************************
+nav utilities starts here 
+***************************************************
+*/
+
+.mobile-top {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-animation-name: pop;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.5s;
+  animation-name: pop;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s;
+
+  @keyframes pop {
+    from {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+.disp {
+  display: none;
+}
+
+.nav-items {
+  display: block;
+}
+
+/*
+***************************************************
+nav utilities ends here 
+***************************************************
+*/

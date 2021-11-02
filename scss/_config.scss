@@ -1,0 +1,68 @@
+$main-color: #d80808;
+$light-red: #ff4343;
+$headline: #168aff;
+$stats: #09483d;
+$secondary-color: #091f2c;
+$dark-color: #000;
+$light-color: #f6f6f6;
+$squad-bg: url("../img/image-13.jpg") no-repeat center center/cover;
+$showcase-bg: url("../img/image-13.jpg") no-repeat center center/cover;
+// player profiles
+
+$bg-1: url("../img/image-13.jpg");
+$bg-2: url("../img/image-7.jpg");
+$bg-3: url("../img/image-4.jpg");
+$bg-4: url("../img/image-2.jpg");
+$bg-5: url("../img/image-1.jpg");
+
+
+$pic-1: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-1.jpg") no-repeat center center/cover;
+$pic-2: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-2.jpg") no-repeat center center/cover;
+$pic-3: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-3.jpg") no-repeat center center/cover;
+$pic-4: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-4.jpg") no-repeat center center/cover;
+$pic-5: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-5.jpg") no-repeat center center/cover;
+$pic-6: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-6.jpg") no-repeat center center/cover;
+$pic-7: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-7.jpg") no-repeat center center/cover;
+$pic-8: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-8.jpg") no-repeat center center/cover;
+$pic-9: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-9.jpg") no-repeat center center/cover;
+
+$pic-10: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-10.jpg") no-repeat center center/cover;
+$pic-11: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-11.jpg") no-repeat center center/cover;
+$pic-12: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-12.jpg") no-repeat center center/cover;
+$pic-13: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-13.jpg") no-repeat center center/cover;
+
+$pic-14: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-14.jpg") no-repeat center center/cover;
+$pic-15: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-15.jpg") no-repeat center center/cover;
+$pic-16: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-16.jpg") no-repeat center center/cover;
+$pic-17: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-17.jpg") no-repeat center center/cover;
+$pic-18: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-18.jpg") no-repeat center center/cover;
+$pic-19: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-19.jpg") no-repeat center center/cover;
+$pic-20: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+  url("../img/player-20.jpg") no-repeat center center/cover;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
