@@ -1,15 +1,15 @@
-About Project
+# About Project
 
-The Project is a simple football club website.
+The Project is a simple football club website built in 2019.
 
-Technologies utilised
+# Technologies utilised
 
-HTML5,
-CSS3,
-Sass preprocessor,
-Javascript,
-JQuery,
-AOS JS Library
+### HTML5,
+### CSS3,
+### Sass preprocessor,
+### Javascript,
+### JQuery,
+### AOS JS Library
 
 Fonts & Icons -
 Fontawesome Google Fonts
@@ -23,3 +23,5 @@ Visual Studio Code, Adobe XD(For the Mockup), Linux Terminal(Version control, NP
 
 Deployment -
 Netlify
+
+Site Link: https://casautd.netlify.app
