@@ -19,7 +19,7 @@ HTML Color Codes
 
 Text Editors & Other Software -
 
-Visual Studio Code, Adobe XD(For the Mockup), Linux Terminal(Version control, NPM setup and deployment), Github (Version control),
+Visual Studio Code, Adobe XD(For the Mockup), Ubuntu Terminal(Version control, NPM setup and deployment), Github (Version control),
 
 Deployment -
 Netlify
